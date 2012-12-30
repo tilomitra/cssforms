@@ -1,0 +1,10 @@
+{
+    "name": "gallery-cssforms",
+    "builds": {
+        "gallery-cssforms": {
+            "cssfiles": [
+                "forms.css"
+            ]
+        }
+    }
+}

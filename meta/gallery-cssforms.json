@@ -1,0 +1,9 @@
+{
+    "gallery-cssforms": {
+        "requires": [
+            "forms"
+        ],
+        "type": "css"
+    }
+}
+
