@@ -3,7 +3,8 @@
     "builds": {
         "gallery-cssforms": {
             "cssfiles": [
-                "forms.css"
+                "forms.css",
+                "forms-responsive.css"
             ]
         }
     }
