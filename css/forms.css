@@ -93,6 +93,8 @@ legend {
 }
 .yui3-inline-form label {
   display: inline-block;
+  *display: inline;
+  *zoom: 1;
 }
 .yui3-horizontal-form .yui3-control-group {
   margin-bottom: 10px;
