@@ -73,16 +73,12 @@ legend {
 }
 .yui3-form-inline input,
 .yui3-form-horizontal input,
-.yui3-form-rounded input,
 .yui3-form-inline textarea,
 .yui3-form-horizontal textarea,
-.yui3-form-rounded textarea,
 .yui3-form-inline select,
 .yui3-form-horizontal select,
-.yui3-form-rounded select,
 .yui3-form-inline .yui3-help-inline,
-.yui3-form-horizontal .yui3-help-inline,
-.yui3-form-rounded .yui3-help-inline {
+.yui3-form-horizontal .yui3-help-inline {
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
@@ -93,8 +89,6 @@ legend {
 }
 .yui3-form-inline label {
   display: inline-block;
-  *display: inline;
-  *zoom: 1;
 }
 .yui3-form-horizontal .yui3-control-group {
   margin-bottom: 10px;
@@ -109,7 +103,7 @@ legend {
 .yui3-form-horizontal .yui3-controls {
   margin: 20px 0 0 170px;
 }
-.yui3-form-rounded input {
+.yui3-input-rounded {
   border-radius: 20px;
   padding-left: 10px;
 }
