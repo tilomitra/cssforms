@@ -3,5 +3,21 @@ gallery-cssform
 
 Super simple CSS for HTML Form Elements. 
 
+
+What is it?
+-----------
+
+`gallery-cssform` is a [YUI Gallery](http://yuilibrary.com/gallery/) module that makes it easy to style HTML form elements by just adding class names. Take a look at the [docs](http://tilomitra.github.com/cssforms/) for some examples.
+
+
+What about older browsers?
+--------------------------
+
+Since it's all CSS, nothing breaks in older browsers. This module is tested on IE6+, Chrome, FF and Safari. For best results, use IE8+. IE6 and 7 have some minor vertical alignment issues for certain forms.
+
+
+Links
+-----
+
 [View the source](https://github.com/tilomitra/cssforms/) on Github. Documentation for this module can be found on [Github Pages](http://tilomitra.github.com/cssforms/)
 
