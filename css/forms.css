@@ -15,7 +15,7 @@ select:focus {
   /* IE6-9 */
 
   border-color: #8FD6F2;
-  box-shadow: 0 0px 5px #11AFED;
+  box-shadow: 0 0 5px #11AFED;
 }
 .yui3-checkbox,
 .yui3-radio {
@@ -40,7 +40,7 @@ input:focus:invalid:focus,
 textarea:focus:invalid:focus,
 select:focus:invalid:focus {
   border-color: #e9322d;
-  box-shadow: 0 0px 5px #ce1a15;
+  box-shadow: 0 0 5px #ce1a15;
 }
 select {
   width: 220px;
@@ -85,7 +85,6 @@ legend {
 
   *zoom: 1;
   vertical-align: middle;
-  margin-bottom: 0;
 }
 .yui3-form-inline label {
   display: inline-block;
@@ -94,7 +93,6 @@ legend {
   margin-bottom: 10px;
 }
 .yui3-form-horizontal .yui3-control-group label {
-  display: inline-block;
   text-align: right;
   float: left;
   width: 160px;
