@@ -1,5 +1,5 @@
 {
-    "gallery-cssforms": {
+    "gallery-cssform": {
         "requires": [
             "forms",
             "forms-responsive"
