@@ -1,4 +1,4 @@
-gallery-cssform
+gallerycss-cssform
 ===============
 
 Super simple CSS for HTML Form Elements. 
@@ -7,7 +7,7 @@ Super simple CSS for HTML Form Elements.
 What is it?
 -----------
 
-`gallery-cssform` is a [YUI Gallery](http://yuilibrary.com/gallery/) module that makes it easy to style HTML form elements by just adding class names. Take a look at the [docs](http://tilomitra.github.com/cssforms/) for some examples.
+`gallerycss-cssform` is a [YUI Gallery](http://yuilibrary.com/gallery/) module that makes it easy to style HTML form elements by just adding class names. Take a look at the [docs](http://tilomitra.github.com/cssforms/) for some examples.
 
 
 What about older browsers?

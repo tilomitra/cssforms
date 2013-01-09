@@ -1,6 +1,6 @@
 {
-    "name"       : "gallery-cssforms",
-    "displayName": "Gallery: gallery-cssforms",
+    "name"       : "gallerycss-cssforms",
+    "displayName": "Gallery: gallerycss-cssforms",
     "description": "Simple CSS for HTML Form Elements",
     "author"     : [ "tilomitra" ],
 

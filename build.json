@@ -1,7 +1,7 @@
 {
-    "name": "gallery-cssform",
+    "name": "gallerycss-cssform",
     "builds": {
-        "gallery-cssform": {
+        "gallerycss-cssform": {
             "cssfiles": [
                 "forms.css",
                 "forms-responsive.css"
