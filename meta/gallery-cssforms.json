@@ -1,8 +1,7 @@
 {
     "gallery-cssform": {
         "requires": [
-            "forms",
-            "forms-responsive"
+            "cssbutton"
         ],
         "type": "css"
     }
