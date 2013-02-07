@@ -35,12 +35,13 @@
             margin:0;
             padding:0;
         }
-        code {
+        code, pre {
           padding: 2px 4px;
           border-radius:3px;
           margin: 3px;
           background: #FEFFD4;
           color:#464729;
+          font-size: 75%;
         }
         
         .content {
@@ -54,6 +55,18 @@
         }
         .gist {
             margin:20px 0;
+            font-size:80%;
+        }
+
+        .gist::before {
+            content: "The HTML:";
+            display: block;
+            padding-bottom:10px;
+        }
+
+        .notice {
+            background-color: #61B842;
+            color: white;
         }
     </style>
 </head>
@@ -121,7 +134,7 @@
             <label class="yui3-checkbox">
               <input type="checkbox"> I've read the terms and conditions
             </label>
-            <button type="submit" class='yui3-button'>Submit</button>
+            <button type="submit" class='yui3-button notice'>Submit</button>
           </fieldset>
         </form>
 
@@ -170,7 +183,7 @@
             <label class="yui3-checkbox">
               <input type="checkbox"> I've read the terms and conditions
             </label>
-            <button type="submit" class='yui3-button'>Submit</button>
+            <button type="submit" class='yui3-button notice'>Submit</button>
           </fieldset>
         </form>
 
@@ -241,7 +254,7 @@
                 <input type="text" class='yui3-input-large' placeholder='Another Group'>
                 <input type="text" class='yui3-input-large' placeholder='More Stuff'>
             </fieldset>
-            <button type="submit" class="yui3-button yui3-input-large">Sign in</button>
+            <button type="submit" class="yui3-button yui3-input-large notice">Sign in</button>
         </form>
 
         <script src="https://gist.github.com/4447722.js"></script>
