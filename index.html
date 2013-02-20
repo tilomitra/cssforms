@@ -9,6 +9,13 @@
     <link rel="stylesheet" type="text/css" href="assets/grids-responsive.css">
     <link rel="stylesheet" type="text/css" href="https://rawgithub.com/tilomitra/cssforms/master/css/forms.css">
     <link rel="stylesheet" type="text/css" href="https://rawgithub.com/tilomitra/cssforms/master/css/forms-responsive.css">
+    <link rel="stylesheet" type="text/css" href="https://rawgithub.com/tilomitra/yuicss-common/master/ui.css">
+    <link rel="stylesheet" type="text/css" href="https://rawgithub.com/tilomitra/csslist/master/css/list-core.css">
+    <link rel="stylesheet" type="text/css" href="https://rawgithub.com/tilomitra/csslist/master/css/list.css">
+    <link rel="stylesheet" type="text/css" href="https://rawgithub.com/tilomitra/csslist/master/css/list-responsive.css">
+    <link rel="stylesheet" type="text/css" href="http://tilomitra.github.com/cssextras/cssextras.css">
+
+
     <style>
         body {
             font-family: "Helvetica Neue", sans-serif;
@@ -17,52 +24,11 @@
         }
 
         .header {
-             background: black;
-             min-height: 80px;
-             margin: 0;
-             color:white;
-             padding: 30px 20px;
+             background: rgb(177, 75, 8);
          }
              .header h2 {
-                 font-weight:300;
-                 color: #666;
-                 margin:0;
+                 color: rgb(121, 10, 10);
              }
-
-        h1,h2,h3,h4,h5,h6 {
-            font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
-            font-weight: 300;
-            margin:0;
-            padding:0;
-        }
-        code, pre {
-          padding: 2px 4px;
-          border-radius:3px;
-          margin: 3px;
-          background: #FEFFD4;
-          color:#464729;
-          font-size: 75%;
-        }
-        
-        .content {
-            padding:0 30px;
-        }
-
-        .content h2 {
-            color:#2B474F;
-            margin:50px 0 20px 0;
-            font-weight:bold;
-        }
-        .gist {
-            margin:20px 0;
-            font-size:80%;
-        }
-
-        .gist::before {
-            content: "The HTML:";
-            display: block;
-            padding-bottom:10px;
-        }
 
         .notice {
             background-color: #61B842;
@@ -71,6 +37,15 @@
     </style>
 </head>
 <body class="yui3-skin-sam">
+
+    <div id="headerMenu" class="yui3-menu yui3-menu-open yui3-menu-horizontal yui3-menu-fixed">
+        <ul>
+            <li class="yui3-menu-active"><a href="http://tilomitra.github.com/cssforms/">Forms</a></li>
+            <li><a href="http://tilomitra.github.com/csstables/">Tables</a></li>
+            <li><a href="http://tilomitra.github.com/csslist/">Lists</a></li>
+            <li><a href="http://tilomitra.github.com/cssextras/">Extras</a></li>
+        </ul>
+    </div>
 
     <div class="header y-u-1">
 
@@ -331,5 +306,10 @@
           ..Or this one! 
         </label>
     </div>
+
+
+    <!-- TYPEKIT -->
+    <script type="text/javascript" src="//use.typekit.net/ajf8ggy.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </body>
 </html>
