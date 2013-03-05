@@ -1,29 +1,32 @@
 input,
 select {
-  padding: 9px 9px;
-  border: 1px solid #bbb;
-  box-sizing: border-box;
+  padding: 0.5em 0.6em;
   display: inline-block;
-  margin-bottom: 5px;
-  border-radius: 4px;
+  margin: 0;
+  border: 1px solid #ccc;
+  font-size: 0.8em;
   box-shadow: inset 0 1px 3px #ddd;
-  -webkit-transition: all 150ms ease-out;
+  border-radius: 4px;
+  -webkit-transition: 0.3s linear border;
+  -moz-transition: 0.3s linear border;
+  -ms-transition: 0.3s linear border;
+  -o-transition: 0.3s linear border;
+  transition: 0.3s linear border;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
-  font-size:90%;
 }
+
 input:focus,
 select:focus {
   outline: 0;
-  outline: thin dotted \9;
-  /* IE6-9 */
-
+  outline: thin dotted \9; /* IE6-9 */
   border-color: #129FEA;
-  box-shadow: 0 0 5px #11AFED;
-
 }
 .yui3-checkbox,
 .yui3-radio {
-  margin-top: 5px;
+  margin: 0.5em 0;
 }
 input[disabled],
 select[disabled],
@@ -32,7 +35,9 @@ input[readonly],
 select[readonly],
 textarea[readonly] {
   cursor: not-allowed;
-  background-color: #ddd;
+  background-color: #eaeded;
+  color: #cad2d3;
+  border-color: transparent;
 }
 input:focus:invalid,
 textarea:focus:invalid,
@@ -44,7 +49,6 @@ input:focus:invalid:focus,
 textarea:focus:invalid:focus,
 select:focus:invalid:focus {
   border-color: #e9322d;
-  box-shadow: 0 0 5px #ce1a15;
 }
 select {
   width: 220px;
@@ -56,8 +60,7 @@ select[multiple] {
 }
 label {
   display: block;
-  padding: 4px 0;
-  margin-bottom: 2.5px;
+  margin: 0.5em 0 0.3em;
   vertical-align: middle;
   color: #999;
   font-size:90%;
@@ -70,13 +73,14 @@ fieldset {
 legend {
   display: block;
   width: 100%;
-  padding: 10px 0;
-  margin-bottom: 10px;
+  padding: 0.3em 0;
+  margin-bottom: 0.7em;
   font-size: 125%;
-  line-height: 10px;
+  line-height: 1.6em;
   color: #333;
   border-bottom: 1px solid #e5e5e5;
 }
+
 .yui3-form-inline input,
 .yui3-form-horizontal input,
 .yui3-form-inline textarea,
@@ -84,33 +88,43 @@ legend {
 .yui3-form-inline select,
 .yui3-form-horizontal select,
 .yui3-form-inline .yui3-help-inline,
-.yui3-form-horizontal .yui3-help-inline {
+.yui3-form-horizontal .yui3-help-inline,
+.yui3-input-prepend .yui3-addon,
+.yui3-input-append .yui3-addon {
   display: inline-block;
-  *display: inline;
-  /* IE7 inline-block hack */
-
+  *display: inline; /* IE7 inline-block hack */
   *zoom: 1;
   vertical-align: middle;
 }
 .yui3-form-inline label {
   display: inline-block;
 }
+
+.yui3-form-inline .yui3-button {
+  margin-top: -0.2em`;
+}
+
+/* Horizontal Forms */
 .yui3-form-horizontal .yui3-control-group {
-  margin-bottom: 10px;
+  margin-bottom: 1em;
 }
 .yui3-form-horizontal .yui3-control-group label {
   text-align: right;
   float: left;
-  width: 160px;
-  margin: 8px 10px 0 0;
+  width: 10em;
+  margin: 0.4em 1em 0 0;
 }
 .yui3-form-horizontal .yui3-controls {
-  margin: 20px 0 0 170px;
+  margin: 1.5em 0 0 10em;
 }
+
+/* Rounded Inputs */
 .yui3-input-rounded {
   border-radius: 20px;
   padding-left: 10px;
 }
+
+/* Grouped Inputs */
 .yui3-group {
   margin-bottom: 10px;
 }
@@ -126,13 +140,15 @@ legend {
   z-index: 2;
 }
 .yui3-group :first-child {
-  border-radius: 4px 4px 0 0;
   top: 1px;
+  border-radius: 4px 4px 0 0;
 }
 .yui3-group :last-child {
-  border-radius: 0 0 4px 4px;
   top: -2px;
+  border-radius: 0 0 4px 4px;
 }
+
+/* Input Sizes */
 .yui3-input-mini {
   width: 60px;
 }
@@ -154,8 +170,97 @@ legend {
 button[type='submit'] {
   font-size: 90%;
 }
+
+/* Inline help for forms */
 .yui3-help-inline {
   display: inline-block;
   padding-left: 5px;
   vertical-align: middle;
 }
+
+
+/* Prepended and Appended Inputs */
+.yui3-input-prepend, .yui3-input-append {
+  margin-bottom: 0.5em;
+
+  /* Remove all whitespace between inline-block elements */
+  white-space: nowrap;
+  letter-spacing: -0.31em; /* webkit: collapse white-space between units */
+  *letter-spacing: normal; /* reset IE < 8 */
+  word-spacing: -0.43em; /* IE < 8 && gecko: collapse white-space between units */
+}
+
+/* The addons on prepended and appended inputs */
+
+.yui3-input-prepend .yui3-addon, .yui3-input-append .yui3-addon {
+  padding: 0.5em 0.8em;
+  font-size: 0.7em;
+  text-align: center;
+  border:1px solid #eee;
+  background: #eee;
+
+  /* line-height and height equal the same value to get consistent height in FF/Chrome */
+  height:19px; 
+  line-height:19px;
+
+  /* Reset letter and word spacing to normal so wrapper white-space collapse don't affect this element */
+  letter-spacing: normal;
+  word-spacing: normal;
+  color: #999;
+}
+
+/* For prepended add ons, we only want border radius on the top and bottom left */
+.yui3-input-prepend .yui3-addon {
+  border-radius: 4px 0 0 4px;
+}
+
+/* For inputs that come after a prepended addon, we only want border radius on the top and bottom right. The vertical align:top is for the display:inline-block; on FF. */
+.yui3-input-prepend input {
+  vertical-align: top;
+  border-radius: 0 4px 4px 0;
+}
+
+/* For appended add ons, we only want border radius on the top and bottom right */
+.yui3-input-append .yui3-addon {
+  border-radius: 0 4px 4px 0;
+}
+
+/* For inputs that come before an appended addon, we only want border radius on the top and bottom left. The vertical align:top is for the display:inline-block; on FF. */
+.yui3-input-append input {
+  vertical-align: top;
+  border-radius: 4px 0 0 4px;
+}
+
+/* For addons that are part of a prepended and appended div, we want the first one to have top and bottom left rounded-corners. */
+.yui3-input-prepend.yui3-input-append .yui3-addon:first-child {
+  border-radius: 4px 0 0 4px;
+}
+
+/* For inputs that are part of a prepended and appended div, we dont want any rounded corners since they are surrounded by addons */
+.yui3-input-prepend.yui3-input-append input {
+  border-radius: 0;
+}
+
+/* Prepended and appended buttons should reset their border-radius to 0. Word and letter spacing return to normal because they were collapsed for parent (see above) */
+.yui3-input-prepend .yui3-button, .yui3-input-append .yui3-button {
+  border-radius: 0;
+  word-spacing: normal;
+  letter-spacing: normal;
+}
+
+/* For prepended buttons, we only want border radius on the top and bottom left. The negative margin stops the double-border and box-shadow from leaking */
+.yui3-input-prepend .yui3-button {
+  border-radius: 4px 0 0 4px;
+  margin: 0 -1px 0 0;
+}
+
+/* For appended buttons, we only want border radius on the top and bottom right. The negative margin stops the double-border and box-shadow from leaking */
+.yui3-input-append .yui3-button {
+  margin: 0 0 0 -1px;
+}
+
+/* If we have multiple appended buttons, we only want the rounded border to affect the last one. */
+.yui3-input-append .yui3-button:last-child {
+  border-radius: 0 4px 4px 0;
+}
+
