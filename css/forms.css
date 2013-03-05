@@ -88,6 +88,7 @@ legend {
 .yui3-form-inline select,
 .yui3-form-horizontal select,
 .yui3-form-inline .yui3-help-inline,
+.yui3-form-inline label,
 .yui3-form-horizontal .yui3-help-inline,
 .yui3-input-prepend .yui3-addon,
 .yui3-input-append .yui3-addon {
@@ -95,9 +96,6 @@ legend {
   *display: inline; /* IE7 inline-block hack */
   *zoom: 1;
   vertical-align: middle;
-}
-.yui3-form-inline label {
-  display: inline-block;
 }
 
 .yui3-form-inline .yui3-button {
