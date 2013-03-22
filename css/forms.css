@@ -78,7 +78,9 @@
   border-bottom: 1px solid #e5e5e5;
 }
 
-.yui3-form.yui3-form-stacked input[type='text'], .yui3-form.yui3-form-stacked select, label {
+.yui3-form.yui3-form-stacked input[type='text'], 
+.yui3-form.yui3-form-stacked select, 
+.yui3-form.yui3-form-stacked label {
   display: block;
 }
 
