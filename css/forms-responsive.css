@@ -8,9 +8,15 @@
 		display: block;
 	}
 
+	.yui3-group input[type='text'] {
+		margin-bottom: 0;
+	}
+
 	.yui3-form-aligned .yui3-control-group label {
 		margin-bottom: 0.3em;
 		text-align: left;
+		display: block;
+		width: 100%;
 	}
 
 	.yui3-form-aligned .yui3-controls {
