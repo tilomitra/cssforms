@@ -1,7 +1,11 @@
 gallerycss-cssform Change History
 =================================
 
-v0.2
+0.2.1
+-----
+* Remove width from .yui3-form select.
+
+0.2
 ----
 
 * Adds `yui3-form` prefix to all forms and form elements to prevent collisions.
