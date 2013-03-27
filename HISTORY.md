@@ -14,6 +14,7 @@ gallerycss-cssform Change History
 * Adds input sizing with a naming convention similar to YUI grids in place of the previous pixel-based input styling. 
 * Form labels are `display: inline` by default. They are `display: block` for checkboxes and radio buttons, and for specific form implementations such as `yui3-form-stacked`. 
 * Rename `yui3-form-horizontal` to `yui3-form-aligned`
+* Add `font-size: 90%` to `.yui3-help-inline` to make it the same font-size as the inputs. 
 * Minor improvements to responsive styles.
 
 
