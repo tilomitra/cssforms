@@ -4,17 +4,11 @@
     <meta charset='utf-8'>
     <meta name="viewport" content="width = device-width">
     <title>YUI Forms CSS</title>
-    <link rel="stylesheet" type="text/css" href="http://necolas.github.com/normalize.css/1.0.2/normalize.css">
-    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.0/build/cssbutton/cssbutton.css">
-    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.9.0/build/cssgrids-responsive/cssgrids-responsive-min.css">
-    <link rel="stylesheet" type="text/css" href="https://rawgithub.com/tilomitra/cssforms/master/css/forms-core.css">
-    <link rel="stylesheet" type="text/css" href="https://rawgithub.com/tilomitra/cssforms/master/css/forms.css">
-    <link rel="stylesheet" type="text/css" href="https://rawgithub.com/tilomitra/cssforms/master/css/forms-responsive.css">
-    <link rel="stylesheet" type="text/css" href="https://rawgithub.com/tilomitra/yuicss-common/master/ui.css">
-    <link rel="stylesheet" type="text/css" href="https://rawgithub.com/tilomitra/csslist/master/css/list-core.css">
-    <link rel="stylesheet" type="text/css" href="https://rawgithub.com/tilomitra/csslist/master/css/list.css">
-    <link rel="stylesheet" type="text/css" href="https://rawgithub.com/tilomitra/csslist/master/css/list-responsive.css">
-
+    <link rel="stylesheet" href="http://yui.yahooapis.com/combo?3.9.1/build/cssnormalize/cssnormalize-min.css&amp;3.9.1/build/cssgrids-responsive/cssgrids-responsive-min.css&amp;3.9.1/build/cssbutton/cssbutton-min.css&amp;gallery-2013.03.27-22-06/build/gallerycss-csslist/gallerycss-csslist-min.css&amp;gallery-2013.03.27-22-06/build/gallerycss-csstable/gallerycss-csstable-min.css&amp;gallery-2013.03.27-22-06/build/gallerycss-cssform/gallerycss-cssform-min.css">
+  
+    <link rel="stylesheet" type="text/css" href="https://rawgithub.com/tilomitra/prettypages/gh-pages/ui.css">
+    <link rel="stylesheet" type="text/css" href="https://rawgithub.com/tilomitra/cssextras/master/css/cssextras.css">
+    <link rel="stylesheet" type="text/css" href="https://rawgithub.com/ccampbell/rainbow/master/themes/github.css">
     
 
     <!-- TYPEKIT -->
@@ -50,6 +44,7 @@
             <li class="yui3-menu-active"><a href="http://tilomitra.github.com/cssforms/">Forms</a></li>
             <li><a href="http://tilomitra.github.com/csstables/">Tables</a></li>
             <li><a href="http://tilomitra.github.com/csslist/">Lists</a></li>
+            <li><a href="http://tilomitra.github.com/csstypography/">Typography</a></li>
             <li><a href="http://tilomitra.github.com/cssextras/">Extras</a></li>
         </ul>
     </div>
@@ -64,30 +59,25 @@
     <div class="content">
         <h2>First, include it on your page</h2>
 
-        <p>Get the latest released CSS on your page:</p>
+        <p>Add the CSS on your page:</p>
 
-        <pre>
-
-&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;http://yui.yahooapis.com/gallery-2013.01.09-23-24/build/gallerycss-cssform/gallerycss-cssform.css&quot;&gt;
-        </pre>
-
-        <p>Or you could get the latest from <a href="http://github.com/tilomitra/cssforms">Github</a></p>
-
-        <pre>
-            
-&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://rawgithub.com/tilomitra/cssforms/master/css/forms.css&quot;&gt;
-        </pre>
+        <pre><code data-language="html">  
+    <link rel="stylesheet" href="http://yui.yahooapis.com/gallery-2013.03.27-22-06/build/gallerycss-cssform/gallerycss-cssform-min.css">
+        </code></pre>
 
         <p>Optionally, you can load it through the <code>YUI().use()</code>:</p>
 
-        <pre>
-    YUI({
-        //specify a gallery build
-        gallery: 'gallery-2013.01.09-23-24'
-    }).use('gallerycss-cssform', function(Y) {
-        Y.log('YUI Loaded');     
-    });
-        </pre>
+        <pre><code data-language="javascript">
+      YUI().use(gallerycss-cssform', function(Y) {
+        Y.log('gallerycss-cssform has been added to the <head> as a CSS file');     
+      });
+        </code></pre>
+
+        <p>The latest (unstable) is on Github, and available for forking.</p>
+
+        <p class="text-center">
+          <a class="yui3-button yui3-button-success yui3-button-large" href="http://github.com/tilomitra/cssforms">Fork from Github</a>
+        </p>
 
         <h2>Default Form</h2>
 
@@ -361,6 +351,7 @@
          </form>
         
     </div>
-
+    <script src="https://rawgithub.com/ccampbell/rainbow/master/js/rainbow.min.js"></script>
+    <script src="https://rawgithub.com/ccampbell/rainbow/master/js/language/generic.js"></script>
 </body>
 </html>
